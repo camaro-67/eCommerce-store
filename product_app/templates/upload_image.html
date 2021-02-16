@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The input accept attribute</h1>
+
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+  <label for="img">Select main image:</label>
+  <input type="file" id="id_file" class="style" name="ImageFile">
+
+  <label for="img1">Select latest image:</label>
+  <input type="file" id="id_file_1" class="style" name="ImageFile_1">
+  <input type="submit">
+</form>
+
+<p><strong>Note:</strong> Because of security issues, this example will not allow you to upload files.</p>
+
+</body>
+</html>
